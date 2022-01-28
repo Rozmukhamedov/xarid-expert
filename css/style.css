@@ -1015,6 +1015,7 @@ h3 {
 @media (max-width: 767px) {
   .prise_area .single_prise {
     padding: 20px;
+    height: 500px;
   }
 }
 
@@ -1072,7 +1073,7 @@ h3 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .prise_area .single_prise .prise_header .prise_text {
     margin-bottom: 30px;
   }
@@ -1087,51 +1088,19 @@ h3 {
   -o-transition: 0.5s;
   transition: 0.5s;
   line-height: 1;
+  position: absolute;
+  bottom: 0;
 }
 
-.prise_area .single_prise .prise_number_1 {
-  margin-top: 222px;
-}
-
-.prise_area .single_prise .prise_number_2 {
-  margin-top: 232px;
-}
-
-.prise_area .single_prise .prise_number_4 {
-  margin-top: 170px;
-}
-
-.prise_area .single_prise .prise_number_5 {
-  margin-top: 290px;
+@media (max-width: 991px) {
+  .prise_area .single_prise .prise_number {
+    font-size: 90px;
+  }
 }
 
 @media (max-width: 767px) {
   .prise_area .single_prise .prise_number {
     font-size: 90px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .prise_area .single_prise .prise_number {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .prise_area .single_prise .prise_number_1 {
-    margin-top: 250px;
-  }
-
-  .prise_area .single_prise .prise_number_2 {
-    margin-top: 260px;
-  }
-
-  .prise_area .single_prise .prise_number_4 {
-    margin-top: 170px;
-  }
-
-  .prise_area .single_prise .prise_number_5 {
-    margin-top: 285px;
   }
 }
 
@@ -1575,6 +1544,12 @@ h3 {
   .bradcam_area h3 {
     font-size: 30px;
   }
+  .bradcam_area .border_text {
+    width: 369px;
+  }
+  .bradcam_area .border_text p {
+    font-size: 13px;
+  }
 }
 
 .contact-info {
@@ -1747,9 +1722,15 @@ h6 {
   width: 180px;
 }
 
+@media (max-width: 991px) {
+  #myBtn {
+    width: 100%;
+  }
+}
+
 .modal {
   display: none; /* Hidden by default */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -1758,7 +1739,7 @@ h6 {
   background-color: rgb(0, 0, 0); /* Fallback color */
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .modal-content {
@@ -1798,6 +1779,12 @@ h6 {
   }
 }
 
+@media (max-width: 1200px) {
+  .modal-content {
+    width: 60%;
+  }
+}
+
 .close {
   color: #000;
   font-size: 28px;
@@ -1833,4 +1820,8 @@ h6 {
   margin-bottom: 20px;
   color: #ffffff;
   background: #2c2c2c;
+}
+
+.slicknav_icon-bar {
+  background: #828bb2 !important;
 }

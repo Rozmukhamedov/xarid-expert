@@ -26,11 +26,10 @@
         closedSymbol: '+',
         openedSymbol: '-'
       });
+      $('.slicknav_nav button').css("display", "none")
     };
-    // blog-menu
-    // $('ul#blog-menu').slicknav({
-    //   prependTo: ".blog_menu"
-    // });
+
+
 
     // review-active
     $('.slider_active').owlCarousel({
@@ -81,13 +80,13 @@
       autoplaySpeed: 800,
       responsive: {
         0: {
-          items: 3,
+          items: 1,
         },
         767: {
-          items: 3,
+          items: 2,
         },
         992: {
-          items: 3,
+          items: 2,
         },
         1200: {
           items: 4,
@@ -433,13 +432,34 @@
     $('select').niceSelect();
   });
 
-  // prise slider 
+
+})(jQuery);
+
+var modal = document.getElementById('myModal');
 
 
+var btn = document.getElementById("myBtn");
 
 
+var span = document.getElementsByClassName("close")[0];
 
 
+btn.onclick = function () {
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
 
 
-})(jQuery);	
+span.onclick = function () {
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+}
+
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = 'hidden';
+  }
+}
+
