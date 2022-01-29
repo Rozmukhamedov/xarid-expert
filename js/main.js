@@ -6,9 +6,11 @@
     if (scroll < 400) {
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
+      $('.navbar-link').css("color", "#fff")
     } else {
       $("#sticky-header").addClass("sticky");
       $('#back-top').fadeIn(500);
+      $('.navbar-link').css("color", "#1f1f1f")
     }
   });
 
@@ -27,6 +29,7 @@
         openedSymbol: '-'
       });
       $('.slicknav_nav button').css("display", "none")
+
     };
 
 
@@ -77,7 +80,7 @@
       nav: false,
       dots: false,
       autoplayHoverPause: true,
-      autoplaySpeed: 800,
+      autoplaySpeed: 500,
       responsive: {
         0: {
           items: 1,
